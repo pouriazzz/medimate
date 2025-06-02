@@ -194,7 +194,7 @@ export default function BloodTestAnalysis() {
         formDataToSend.append('inputMethod', formData.inputMethod);
         formDataToSend.append('bloodTestResults', formData.bloodTestResults);
 
-        const response = await fetch('https://poorialakzian.app.n8n.cloud/webhook-test/9845f4f5-73e2-4cd2-ace8-ac5c4c256aa9', {
+        const response = await fetch('https://poorialakzian.app.n8n.cloud/webhook/9845f4f5-73e2-4cd2-ace8-ac5c4c256aa9', {
           method: 'POST',
           body: formDataToSend,
         });
