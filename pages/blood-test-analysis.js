@@ -138,7 +138,7 @@ export default function BloodTestAnalysis() {
 
     try {
       if (formData.inputMethod === 'manual') {
-        const response = await fetch('https://poorialakzian.app.n8n.cloud/webhook/9845f4f5-73e2-4cd2-ace8-ac5c4c256aa9', {
+        const response = await fetch('https://pourialakzian.app.n8n.cloud/webhook/9845f4f5-73e2-4cd2-ace8-ac5c4c256aa9', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -194,7 +194,7 @@ export default function BloodTestAnalysis() {
         formDataToSend.append('inputMethod', formData.inputMethod);
         formDataToSend.append('bloodTestResults', formData.bloodTestResults);
 
-        const response = await fetch('https://poorialakzian.app.n8n.cloud/webhook/9845f4f5-73e2-4cd2-ace8-ac5c4c256aa9', {
+        const response = await fetch('https://pourialakzian.app.n8n.cloud/webhook/9845f4f5-73e2-4cd2-ace8-ac5c4c256aa9', {
           method: 'POST',
           body: formDataToSend,
         });
